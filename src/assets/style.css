@@ -1,0 +1,87 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	font-family: "Microsoft YaHei", serif;
+}
+
+a {
+	color: #00D1B2;
+}
+
+a:hover {
+	color: #FFFFFF;
+}
+
+.md {
+	line-height: 2;
+}
+
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+	text-align: center;
+}
+
+.md h1 {
+	font-size: 3rem;
+}
+
+.md h2 {
+	font-size: 2.5rem;
+}
+
+.md h3 {
+	font-size: 2rem;
+}
+
+.md h4 {
+	font-size: 1.5rem;
+}
+
+.md h5 {
+	font-size: 1.25rem;
+}
+
+.md h6 {
+	font-size: 1rem;
+}
+
+.md ul, .md ol {
+	list-style-position: inside;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot?b7dede');
+	src: url('fonts/icomoon.eot?b7dede#iefix') format('embedded-opentype'),
+	url('fonts/icomoon.ttf?b7dede') format('truetype'),
+	url('fonts/icomoon.woff?b7dede') format('woff'),
+	url('fonts/icomoon.svg?b7dede#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-info:before {
+	content: "\e901";
+}
+
+.icon-fiber_new:before {
+	content: "\e900";
+}
