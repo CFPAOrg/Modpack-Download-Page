@@ -7,9 +7,7 @@
 				{{ item.name }}
 			</li>
 		</ul>
-		<button class="button is-primary toggle-aside" @click="toggleAside">
-			<span v-if="showAside">隐藏</span> <span v-else>显示</span>菜单
-		</button>
+		<buttons-menu @toggle="toggleAside" @comment="showComment"/>
 		<div class="app">
 			<div class="app-container container has-text-white ">
 				<div class="loading">
@@ -19,12 +17,15 @@
 				<download-table :data="data[modpackIndex]" v-if="modpackIndex !== -1"/>
 			</div>
 		</div>
+		<comment :show.sync="showCommentModal"/>
 	</div>
 </template>
 
 <script>
 	import Loading from "./components/Loading";
 	import DownloadTable from './components/DownloadTable';
+	import ButtonsMenu from './components/ButtonsMenu';
+	import Comment from './components/Comment';
 	import pMinDelay from 'p-min-delay';
 	import marked from 'marked';
 
@@ -32,7 +33,9 @@
 		name: "App",
 		components: {
 			Loading,
-			DownloadTable
+			DownloadTable,
+			ButtonsMenu,
+			Comment
 		},
 		data () {
 			return {
@@ -41,7 +44,8 @@
 				notice: '',
 				showNotice: true,
 				modpackIndex: -1,
-				showAside: false
+				showAside: false,
+				showCommentModal: false
 			}
 		},
 		beforeCreate () {
@@ -73,7 +77,11 @@
 			},
 			toggleAside () {
 				this.showAside = !this.showAside;
+			},
+			showComment () {
+				this.showCommentModal = !this.showCommentModal;
 			}
+
 		},
 		computed: {
 			isMobile () {
@@ -162,17 +170,14 @@
 		margin-top: 16px;
 	}
 
-	.toggle-aside {
-		position: absolute;
-		right: 16px;
-		bottom: 16px;
-		display: none;
-		z-index: 2;
-	}
-
 	@media screen and (max-width: 1087px) {
 		.app-container {
 			margin: auto 8px;
+			max-width: 100%;
+		}
+
+		.app {
+			width: 100%;
 		}
 
 		.aside {
@@ -186,18 +191,6 @@
 
 		.title {
 			left: 0;
-		}
-
-		.app {
-			width: 100%;
-		}
-
-		.app-container {
-			max-width: 100%;
-		}
-
-		.toggle-aside {
-			display: block;
 		}
 	}
 </style>

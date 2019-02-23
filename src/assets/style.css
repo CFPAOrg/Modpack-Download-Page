@@ -52,36 +52,3 @@ a:hover {
 	list-style-position: inside;
 }
 
-@font-face {
-	font-family: 'icomoon';
-	src: url('fonts/icomoon.eot?b7dede');
-	src: url('fonts/icomoon.eot?b7dede#iefix') format('embedded-opentype'),
-	url('fonts/icomoon.ttf?b7dede') format('truetype'),
-	url('fonts/icomoon.woff?b7dede') format('woff'),
-	url('fonts/icomoon.svg?b7dede#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'icomoon' !important;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-info:before {
-	content: "\e901";
-}
-
-.icon-fiber_new:before {
-	content: "\e900";
-}
