@@ -7,7 +7,7 @@
 				{{ item.name }}
 			</li>
 		</ul>
-		<buttons-menu @toggle="toggleAside" @comment="showComment"/>
+		<buttons-menu @toggle="showAside = !showAside" @comment="showCommentModal = true"/>
 		<div class="app">
 			<div class="app-container container has-text-white ">
 				<div class="loading">
@@ -74,14 +74,7 @@
 				this.modpackIndex = index;
 				let md = `## ${this.data[index].name}整合包汉化下载`;
 				this.$refs.notice.innerHTML = marked(md);
-			},
-			toggleAside () {
-				this.showAside = !this.showAside;
-			},
-			showComment () {
-				this.showCommentModal = !this.showCommentModal;
 			}
-
 		},
 		computed: {
 			isMobile () {

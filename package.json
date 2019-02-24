@@ -14,7 +14,9 @@
     "buefy": "^0.7.2",
     "loaders.css": "^0.1.2",
     "marked": "^0.6.0",
+    "node-sass": "^4.11.0",
     "p-min-delay": "^2.0.0",
+    "sass-loader": "^7.1.0",
     "vue": "^2.5.2"
   },
   "devDependencies": {
