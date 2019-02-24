@@ -2,7 +2,7 @@
 	<keep-alive>
 		<transition name="zoom-out">
 			<div class="modal is-active" v-show="active" ref="modal">
-				<div class="modal-background" @click="active = false;"></div>
+				<div class="modal-background" @click="active = false"></div>
 				<div class="modal-content">
 					<loading v-if="loading"/>
 					<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTcxNS82Mjgz"></div>
@@ -44,6 +44,22 @@
 				this.loading = false;
 			};
 			e.parentNode.insertBefore(j, e);
+		},
+		methods: {
+			keyPress (event) {
+				// Esc key
+				if (this.active && event.keyCode === 27) this.active = false;
+			}
+		},
+		created () {
+			if (typeof window !== 'undefined') {
+				document.addEventListener('keyup', this.keyPress)
+			}
+		},
+		beforeDestroy () {
+			if (typeof window !== 'undefined') {
+				document.removeEventListener('keyup', this.keyPress)
+			}
 		}
 	}
 </script>

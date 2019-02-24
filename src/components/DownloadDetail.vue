@@ -3,11 +3,11 @@
 		<div class="detail-container">
 			<div v-if="!showHash">
 				<p class="has-text-white">请选择平台</p>
-				<a class="button is-primary" href="#data.windows.url" @click="download('windows')">
+				<a class="button is-primary" :href="data.windows.url" @click="download('windows')">
 					<span class="icon"><i class="iconfont icon-windows"></i></span>
 					<span>Windows</span>
 				</a>
-				<a class="button is-primary" href="#data.linux.url" @click="download('linux')">
+				<a class="button is-primary" :href="data.linux.url" @click="download('linux')">
 					<span class="icon"><i class="iconfont icon-linux"></i></span>
 					<span>Linux</span>
 				</a>
@@ -89,7 +89,7 @@
 		}
 		dl {
 			dt {
-
+				font-weight: bold;
 			}
 		}
 	}
