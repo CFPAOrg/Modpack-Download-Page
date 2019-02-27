@@ -22,13 +22,13 @@
 				</tbody>
 			</table>
 		</div>
-		<download-detail :show.sync="showDetail" :data="downloadData"/>
+		<download-detail v-if="downloadData" :show.sync="showDetail" :data="downloadData"/>
 	</div>
 
 </template>
 <style>
 	.download-table {
-		background-color: transparent;
+		background-color: transparent !important;
 	}
 
 	.download-table th {

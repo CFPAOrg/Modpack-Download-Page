@@ -60,7 +60,6 @@
 				this.showHash = true;
 			},
 			onClose () {
-				console.log(123);
 				this.platform = '';
 				this.showHash = false;
 			}
