@@ -1,8 +1,7 @@
 import Vue from "vue";
 import axios from 'axios';
 import App from "./App";
-import Tooltip from 'buefy/dist/components/Tooltip'
-import Modal from 'buefy/dist/components/Modal'
+import Modal from 'buefy/dist/components/modal';
 
 import 'loaders.css/loaders.css';
 import './assets/style.scss';
