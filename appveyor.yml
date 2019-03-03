@@ -1,7 +1,7 @@
 version: 1.0.{build}
 image: Ubuntu1604
 environment:
-  nodejs_version: "6"
+  nodejs_version: "10"
 install:
 - sh: yarn
 build_script:
