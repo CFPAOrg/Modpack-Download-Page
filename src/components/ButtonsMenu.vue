@@ -12,6 +12,9 @@
 			<span class="button is-primary is-large" @click="comment">
 				<i class="iconfont icon-comment is-size-4"></i>
 			</span>
+			<!--<span class="button is-primary" @click="about">
+				<i class="iconfont icon-info"></i>
+			</span>-->
 		</div>
 	</div>
 </template>
@@ -39,6 +42,9 @@
 			},
 			comment () {
 				this.$emit('comment');
+			},
+			about () {
+				this.$emit('about');
 			}
 		}
 	}

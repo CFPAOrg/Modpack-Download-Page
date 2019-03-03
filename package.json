@@ -12,7 +12,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "buefy": "^0.7.2",
+    "dayjs": "^1.8.8",
     "loaders.css": "^0.1.2",
+    "lodash._arraymax": "^3.0.0",
     "marked": "^0.6.0",
     "node-sass": "^4.11.0",
     "p-min-delay": "^2.0.0",

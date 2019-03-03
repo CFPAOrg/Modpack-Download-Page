@@ -1707,6 +1707,10 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "http://registry.npm.taobao.org/date-now/download/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
+dayjs@^1.8.8:
+  version "1.8.8"
+  resolved "http://registry.npm.taobao.org/dayjs/download/dayjs-1.8.8.tgz#81c81a8bb2488ef859f6c9bead9b62d649072bfd"
+
 de-indent@^1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/de-indent/download/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
@@ -3339,6 +3343,10 @@ locate-path@^2.0.0:
   dependencies:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
+
+lodash._arraymax@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/lodash._arraymax/download/lodash._arraymax-3.0.0.tgz#8fefab32f2b203939b5f6f6952469354ac92dc8b"
 
 lodash.assign@^4.2.0:
   version "4.2.0"
