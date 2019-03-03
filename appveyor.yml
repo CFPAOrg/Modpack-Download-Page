@@ -1,0 +1,10 @@
+version: 1.0.{build}
+image: Ubuntu1604
+environment:
+  nodejs_version: "6"
+install:
+- sh: yarn
+build_script:
+- sh: yarn build
+deploy_script:
+- sh: ''
