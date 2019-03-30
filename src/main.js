@@ -10,7 +10,7 @@ import './assets/style.scss';
 Vue.config.productionTip = false;
 Vue.prototype.$http = axios;
 
-Vue.use(Tooltip);
+// Vue.use(Tooltip);
 Vue.use(Modal);
 
 /* eslint-disable no-new */
