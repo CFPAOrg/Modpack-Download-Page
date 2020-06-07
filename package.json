@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "buefy": "^0.7.2",
+    "buefy": "^0.8.20",
     "dayjs": "^1.8.8",
     "loaders.css": "^0.1.2",
     "lodash._arraymax": "^3.0.0",
