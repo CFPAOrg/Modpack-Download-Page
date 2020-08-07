@@ -60,7 +60,7 @@
 		},
 		computed: {
 			sortedData () {
-				return this.data.contents.sort((a, b) => b.time - a.time);
+				return this.data.contents;
 			}
 		}
 	}
