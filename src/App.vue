@@ -59,7 +59,7 @@
 		},
 		mounted () {
 			let delay = 800;
-			let data = this.$http.get('static/data.json');
+			let data = this.$http.get('static/data.json?t=' + new Date().getTime());
 			let notice = this.$http.get('static/notice.md');
 
 			pMinDelay(Promise.all([data, notice]), delay).then((value) => {
