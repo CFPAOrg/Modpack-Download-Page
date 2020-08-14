@@ -1,0 +1,30 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+  --theme-color: #1fd2b4;
+  --body-color: #fafafa;
+}
+
+body {
+  background-color: var(--body-color);
+  min-height: 100vh;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.link {
+  color: var(--theme-color);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--theme-color);
+}
