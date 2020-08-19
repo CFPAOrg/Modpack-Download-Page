@@ -2,29 +2,64 @@
 
 @tailwind components;
 
-@tailwind utilities;
-
-:root {
-  --theme-color: #1fd2b4;
-  --body-color: #fafafa;
+.link {
+  @apply text-theme-light no-underline border-b border-dotted border-theme-light;
+}
+.nav-link {
+  @apply transition-all duration-300 ease-out float-left;
 }
 
+.nav-link::after,
+.nav-link.router-link-active::after {
+  content: '';
+  @apply block border-b-2 border-solid border-theme-light w-0 transition-width duration-300 ease-out;
+}
+
+.nav-link.router-link-active {
+  @apply font-bold text-theme-light;
+}
+
+.nav-link.router-link-active::after {
+  @apply w-full;
+}
+
+.nav-link:hover::after {
+  @apply w-full transition-width duration-300 ease-out;
+}
+
+.lds-hourglass {
+  @apply relative w-20 h-20 mx-auto;
+}
+
+.lds-hourglass:after {
+  content: ' ';
+  @apply block rounded-full w-0 h-0 m-2 box-border border-solid border-theme-light;
+  border-width: 32px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+@tailwind utilities;
+
 body {
-  background-color: var(--body-color);
-  min-height: 100vh;
+  @apply bg-gray-100 min-h-screen;
 }
 
 #particles-js {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.link {
-  color: var(--theme-color);
-  text-decoration: none;
-  border-bottom: 1px dotted var(--theme-color);
+  @apply fixed inset-0 -z-1;
 }

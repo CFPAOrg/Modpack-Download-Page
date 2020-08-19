@@ -1,0 +1,45 @@
+{
+    "id": "age_of_engineering",
+    "name": "Age of Engineering",
+    "url": "https://www.curseforge.com/minecraft/modpacks/age-of-engineering",
+    "logo": "https://media.forgecdn.net/avatars/93/426/636262895770502676.png",
+    "latest": "1.1.2",
+    "time": 1551163248652,
+    "author": [
+        {
+            "name": "酒石酸菌",
+            "username": "TartaricAcid"
+        }
+    ],
+    "readme": "# 整合包手册以及其他非资源包能覆盖模组的汉化仓库\n\n## 请注意，一定要在替换之前备份游戏，否则可能会出现难以修复的问题\n\n## 1. 为什么要另开仓库？\n\n因为很多整合包手册的加载方式都是基于 `Config` 文件夹文件加载的，无法通过资源包形式覆盖，故另开仓库来放置整合包手册的本地化。\n这里还包括了很多其他类型的汉化，诸如 CraftTweaker 的文本提示，这些翻译极具时效性，如果整合包更新，那么意味着这些文件可能无法使用。\n\n## 2. 那我如何打上汉化呢？\n\n为什么不先访问神奇的网站呢？<https://modpack.cfpa.team/>\n\n如果你在覆盖了汉化以后进入游戏后，发现 SimpleAchievements 的手册上没有任何文字了，请使用 `/flushAchievements` 指令（单机需要开启作弊模式才可用，服务器需要 OP 权限）重载手册。\n\n## 3. 手册汉化注意事项\n\n手册以及其他说明的翻译非常的恶心，作者们标准不一，翻译的位置也不一样，甚至连编码都不能统一。\n如果你想要翻译，一定要注意整合版本，其次要确认编码有没有出错，结构位置是否正确。\n\n## 4. 那这里采用什么协议呢？\n\n和汉化资源包一样，汉化部分采用 CC-BY-NC-SA 协议。\n\n## 5. 鸣谢\n\n感谢 `Suripe`，`普拉斯` 提供的部分 SevTech 整合汉化。\n感谢 `SihenZhang` 的 FTB Continuum 整合汉化。\n感谢 `Kiwi`，`huajijam`，`yesterday`，`Sky_Cat` 提供的 GTNH 整合翻译。\n感谢 `咕咕咕` 提供的 Sky Factory 4 整合 tips 部分汉化。\n另外，由于 GTNH 许多汉化都是在模组自带汉化基础上完善的，所以无法得知作者，只能在此一并感谢所有为汉化工作作出过贡献的人们！\n其他参与人员可在本页面的 Contribution 区域查看。\n",
+    "files": [
+        {
+            "time": 1551163248652,
+            "version": "1.1.2",
+            "linux": {
+                "name": "age_of_engineering-1.1.2-linux.zip",
+                "md5": "5e62698f7046a576e5aca16418abacbe",
+                "url": "https://modpack-1257209710.cos.ap-guangzhou.myqcloud.com/Age%20of%20Engineering-1.1.2-linux.zip"
+            },
+            "windows": {
+                "name": "age_of_engineering-1.1.2-windows.zip",
+                "md5": "5e62698f7046a576e5aca16418abacbe",
+                "url": "https://modpack-1257209710.cos.ap-guangzhou.myqcloud.com/Age%20of%20Engineering-1.1.2-windows.zip"
+            }
+        },
+        {
+            "time": 1551163248652,
+            "version": "1.1.2",
+            "linux": {
+                "name": "age_of_engineering-1.1.2-linux.zip",
+                "md5": "5e62698f7046a576e5aca16418abacbe",
+                "url": "https://modpack-1257209710.cos.ap-guangzhou.myqcloud.com/Age%20of%20Engineering-1.1.2-linux.zip"
+            },
+            "windows": {
+                "name": "age_of_engineering-1.1.2-windows.zip",
+                "md5": "5e62698f7046a576e5aca16418abacbe",
+                "url": "https://modpack-1257209710.cos.ap-guangzhou.myqcloud.com/Age%20of%20Engineering-1.1.2-windows.zip"
+            }
+        }
+    ]
+}
